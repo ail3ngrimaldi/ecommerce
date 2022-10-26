@@ -1,0 +1,16 @@
+
+
+.main__link {
+    text-decoration: none;
+    color: rgb(213, 27, 27);
+    transition: all .2s ease-in-out;
+}
+
+.main__link:hover,
+.main__link:focus {
+    transform: scale(1.2); /*no funciona:(*/
+}
+
+.title {
+    color: red;
+}

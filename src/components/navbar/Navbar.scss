@@ -1,0 +1,111 @@
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 9rem;
+    box-shadow: 0px 1px 2px 0px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    z-index: 99;
+    background-color: var(--clr-grey);
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 3rem;
+}
+
+.navbar-menu {
+    position: relative;
+    top: 3rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-weight: normal;
+    font-size: 1rem;
+    padding-left: 6rem;
+    white-space: nowrap;
+}  
+
+@media screen and (max-width: 48rem) {
+    .navbar-menu {
+        display: none;
+        }
+    }
+
+.navbar-menu-item {
+    text-decoration: none;
+    padding: 1.20rem;
+    color: var(--clr-white);
+    transition: background-color 0.3s !important;
+}
+
+.navbar-menu-item:hover,
+.navbar-menu-item:focus { 
+    background-color: var(--clr-brand-light);
+    color: var(--clr-black);
+}
+
+// .navbar-menu-item.active {
+//     background-color:var(--mid-color);
+//     color: var(--dark-color);
+// }
+
+@media screen and (min-width: 21rem) {
+    .navbar-button {
+        margin-right: 2rem;
+    }
+}
+
+li {
+    list-style: none;
+}
+
+/*NAVBAR LOGO CLASSES*/
+
+.logo {
+    text-decoration: none;
+    color: var(--clr-brand-dark);
+    font-weight: bolder;
+    font-size: 2rem;
+    text-shadow: 0 0 0.125em hsl(0 0% 100% / 0.3), 0 0 0.45em currentColor;
+    letter-spacing: -.05em;
+}
+
+.navbar__logo {
+    position: absolute;
+    top: 1rem;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+}
+
+.container__searchbar {
+    display: flex;
+    align-content: center;
+    height: 1.875rem;
+}
+
+.input__searchbar {
+    margin-right: 1rem;
+    border: none;
+    width: 120%;
+    background-color: var(--clr-grey);
+}
+
+.input__searchbar:focus {
+    outline: none;
+    border-bottom: 1px solid rgb(169, 163, 163);
+}
+
+/*estilos de navlink-cart que ahora esta en el archivo navlogo*/
+.navbar-button {
+    width: 45rem;
+    display: flex;
+    justify-content: flex-end;    
+}
