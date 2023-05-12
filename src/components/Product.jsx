@@ -1,6 +1,8 @@
 import './ProductCard.scss';
 
 export default function ProductCard (props) {
+
+    console.log(typeof(ProductCard))
     return (
         <div className="card">
             <div className="card__body">

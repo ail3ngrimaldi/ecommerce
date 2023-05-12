@@ -1,7 +1,9 @@
 import React from 'react';
 import './Products.scss';
 import ProductCard from './../components/Product';
-// import { images } from './Images';
+import { data } from '../assets/data';
+
+console.log(typeof(data))
 
 function Products() {
     return (
@@ -11,28 +13,24 @@ function Products() {
             </section>
             <div className='cards__container'>
                 <ProductCard 
-                             title="Remera básica"
-                             description="Project with the aim of generating a positive impact on the environment, developed with React Native."
-                             link="https://www.instagram.com/tachito.compost/"
+                             title={data.productOne.title}
+                             img={data.productOne.image}
                 />
                 <ProductCard 
-                             title="Pomodoro timer"
-                             description="Design created with Figma."
-                             link="https://www.figma.com/file/UEWtzV3DeffnyvNmYFVFav?node-id=2%3A4"
+                             title={data.productTwo.title}
+                             img={data.productTwo.image}
                 />
                 <ProductCard 
-                             title="Kindergarten"
-                             description="Landing page for a kindergarten, freelance project."
+                             title={data.productThree.title}
+                             img={data.productThree.image}
                 />
                 <ProductCard 
-                             title="Sarmiento Shelter"
-                             description="Web app for an animal shelter, final project for the bootcamp 'Soy Henry'."
-                             link="https://github.com/ail3ngrimaldi/protectora-animales"
+                             title={data.productFour.title}
+                             img={data.productFour.image}
                 />
                 <ProductCard 
-                             title="My first portfolio"
-                             description="My first portfolio."
-                             link="https://oldportfolio-silk.vercel.app/"
+                             title={data.productFive.title}
+                             img={data.productFive.image}
                 />
             </div>
         </div>
